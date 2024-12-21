@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "apta_research"
+version = "0.0.1"
+authors = [{ name = "Apta", email = "support@apta.chat" }]
+dependencies = [
+    "requests",
+    "pydantic",
+    "pydantic-settings",
+    "openai",
+    "PyYAML",
+    "pymongo",
+    "mongoengine",
+    "ipython",
+    "numpy",
+    "tqdm",
+    "python-dotenv",
+    "joblib",
+    "matplotlib",
+    # "omegaconf",
+    "pandas",
+    "plotly",
+]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["apta_research"]
