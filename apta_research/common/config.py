@@ -4,7 +4,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-DIR_PATH = Path(os.path.dirname(os.path.realpath(__file__)))
+from apta_research.common.base import DIR_PATH
 
 load_dotenv()
 
